@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    font-family: "Poppins", serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    
+    white-space: nowrap;
+   
+    min-height: 100vh;
+    background: #197c56;
+    flex-direction: column;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 80px; 
+    text-align: center;
+}
+.imagesFnd{
+    width: 70%;
+    padding: 0 0 0 1px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(300px,1fr));
+}
+img{
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    
+    transition: .6s;
+   object-fit: cover;
+}
+img.inicial{
+    transform: translateY(100px);
+    opacity: 0;
+    scale: .9;
+}
+img:nth-child(2){
+    transition-delay: .2s;
+}
+img:nth-child(3){
+    transition-delay: .3s;
+}
+img:nth-child(4){
+    transition-delay: .4s;
+}
+
+.contain{
+    width: 300px;
+   
+    overflow: hidden;
+}
+
+progress {
+    width: 50%;
+    border: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4caf50;
+}
+
+progress::-moz-progress-bar {
+    background-color: #4caf50;
+}
